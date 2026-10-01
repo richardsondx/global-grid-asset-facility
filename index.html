@@ -228,21 +228,63 @@
     .source-line{margin-top:56px;font-size:18px;font-weight:700}
     .source-line a{color:var(--accent);text-underline-offset:3px}
     @media(max-width:820px){.wrap{width:min(100% - 28px,680px)}.nav .mark{display:none}.nav-inner{justify-content:center;width:100%}.nav-links{display:grid;grid-template-columns:repeat(6,1fr);width:100%;gap:1px}.nav a{padding:8px 3px;text-align:center;font-size:10.5px}.country-tabs{display:grid;grid-template-columns:1fr 1fr;overflow:visible}.country-tabs button{white-space:normal}.hero-grid,.section-head,.gap-map,.machine,.country,.stakeholder,.launch,.precedent-grid{grid-template-columns:1fr}.gov-grid{grid-template-columns:1fr 1fr}.proposal{margin-top:20px}.loop{grid-template-columns:1fr}.loop-step{min-height:0;border-right:0;border-bottom:1px solid var(--line)}.loop-step:not(:last-child):after{content:"↓";right:18px;top:auto;bottom:-12px}.break-loop{display:block}.machine-nav{position:static;grid-template-columns:1fr 1fr}.machine-stage{padding:28px;min-height:520px}.stage-rule,.cap-caption{grid-template-columns:1fr}.capital-bar{height:72px}.capital-bar div{padding:8px;font-size:10px;font-weight:700;word-break:break-word}.covenant{grid-template-columns:1fr}.covenant button{min-height:100px}.covenant b{margin-top:10px}.country h3{font-size:52px}.decision-grid{grid-template-columns:1fr}.foot{display:block}.section-head{gap:15px}.num{padding-top:0}header{padding-top:60px}section{padding:76px 0}.map-frame{height:380px}.choice-table thead{display:none}.choice-table th,.choice-table td{display:block;width:auto;border-bottom:0;padding:12px 16px}.choice-table tr{display:block;border-bottom:1px solid var(--line);padding:14px 0}.choice-table th{color:var(--accent)}.m-sec{margin-top:100px}.m-hero{margin-top:80px}.m-close{margin-top:110px}.m-foot{display:block}.threeq-grid{grid-template-columns:1fr}.map-zoom{top:8px;right:8px}.eq{grid-template-columns:1fr}.anchor-grid,.work-grid,.split{grid-template-columns:1fr}.gates li{padding-left:66px}}
+/* Loop inverter toggle */
+.loop-toggle{display:inline-flex;gap:4px;border:1px solid var(--line);border-radius:999px;background:var(--white);padding:5px;margin:0 0 26px}
+.loop-toggle button{border:0;background:transparent;color:var(--muted);padding:11px 26px;border-radius:999px;font-weight:800;cursor:pointer;font-size:14px}
+.loop-toggle button.on{background:var(--invert);color:var(--invert-text)}
+/* Before/after bars: turnaround proof, fatal gap, stress test */
+.barfig{margin-top:44px;border:1px solid var(--line);border-radius:34px;background:var(--white);padding:clamp(26px,4vw,46px)}
+.barfig h5{font-family:"Instrument Serif";font-weight:400;font-size:clamp(26px,3vw,34px);margin:36px 0 6px;letter-spacing:-.015em;line-height:1.1}
+.barfig h5:first-child{margin-top:0}
+.barsub{margin:2px 0 16px;color:var(--muted);font-size:16px;max-width:760px}
+.bar-line{display:grid;grid-template-columns:88px 1fr 92px;gap:14px;align-items:center;margin:10px 0}
+.bar-track{background:var(--panel);border-radius:999px;height:26px;overflow:hidden}
+.bar{height:100%;border-radius:999px;background:var(--muted)}
+.bar.after{background:var(--accent)}
+.bar.rev{background:var(--ink)}
+.bar.cost{background:var(--accent)}
+.bar-k{font-size:12px;font-weight:800;letter-spacing:.09em;text-transform:uppercase;color:var(--muted)}
+.bar-v{font-weight:800;font-size:16px;text-align:right;white-space:nowrap}
+.bar-axis{display:grid;grid-template-columns:88px 1fr 92px;gap:14px;margin:6px 0 0}
+.bar-axis .ticks{display:flex;justify-content:space-between;font-size:12px;color:var(--muted);font-weight:600}
+.fatal-note{margin:30px 0 0;font-size:19px;max-width:740px}
+.fig-cap{font-family:"Instrument Serif",serif;font-size:clamp(24px,3.2vw,34px);line-height:1.25;margin:28px 0 4px;max-width:880px;letter-spacing:-.012em}
+.fig-cap .rq{color:var(--accent)}
+/* Covenant stress test */
+.stress{margin-top:64px;border:1px solid var(--line);border-radius:40px;background:var(--white);padding:clamp(30px,4.5vw,54px);scroll-margin-top:80px}
+.stress .panel-kicker{margin:0}
+.stress h4.stress-h{font-family:"Instrument Serif";font-weight:400;font-size:clamp(38px,4.8vw,58px);letter-spacing:-.02em;margin:14px 0 12px;line-height:1}
+.stress-sub{font-size:19px;color:var(--muted);margin:0 0 16px;max-width:780px}
+.slider-row{border-top:1px solid var(--line);padding:22px 0}
+.slider-row .sr-head{display:flex;justify-content:space-between;align-items:baseline;gap:16px;margin-bottom:8px}
+.slider-row label{font-size:16px;font-weight:700}
+.slider-row output{font-size:22px;font-weight:800;font-variant-numeric:tabular-nums}
+.stress input[type=range]{width:100%;margin:0;accent-color:var(--accent);height:36px;cursor:pointer}
+.verdict{margin-top:32px;border-radius:34px;padding:clamp(30px,4.5vw,52px);border:1px solid var(--line);background:var(--panel)}
+.verdict.no{background:var(--invert);color:var(--invert-text);border-color:transparent}
+.verdict-word{font-family:"Instrument Serif";font-weight:400;font-size:clamp(70px,9vw,116px);line-height:.95;letter-spacing:-.035em;margin:0}
+.verdict.no .verdict-word{color:var(--accent)}
+.verdict-reading{font-size:22px;font-weight:700;margin:16px 0 6px}
+.verdict-take{margin:26px 0 0;font-size:20px;max-width:780px;line-height:1.55}
+.verdict-take b{color:var(--accent)}
+.stress-foot{margin:26px 0 0;padding-top:20px;border-top:1px solid var(--line);font-size:14px;color:var(--muted);max-width:840px}
+@media(max-width:820px){.loop-toggle{width:100%}.loop-toggle button{flex:1;padding:11px 8px;font-size:13px}.bar-line,.bar-axis{grid-template-columns:80px 1fr 78px;gap:10px}.bar-line{margin:8px 0}.bar-k{font-size:11px;letter-spacing:.06em;white-space:nowrap}.bar-track{height:22px}.bar-v{font-size:14px}.stress-sub,.verdict-take{font-size:18px}.slider-row output{font-size:19px}}
     @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
   </style>
 </head>
 <body>
 <div class="utility pitch" aria-hidden="true"></div>
 <nav class="nav pitch" aria-label="Section navigation"><div class="wrap nav-inner"><div class="mark">GGAF <span>/ proposal</span></div><div class="nav-links"><a href="#problem">Problem</a><a href="#design">Design</a><a href="#countries">Countries</a><a href="#incentives">Incentives</a><a href="#launch">Launch</a><a href="#manifesto">Manifesto</a></div></div><div class="progress" id="progress"></div></nav>
-<header class="pitch"><div class="wrap"><div class="kicker">An institutional design for reliable power</div><div><span class="concept-badge">Independent concept</span></div><h1>Global Grid Asset Facility</h1><div class="hero-grid"><p class="hero-lead">We fund power lines against revenue utilities actually collect.</p><p class="hero-sub">A proposed multilateral institution to own grid assets, carry completion and payment risk, and turn reliable electricity into durable cash flow.</p><div class="proposal"><strong>Working proposal</strong><p>Narrow mandate. Public covenant. Designed to hand assets back.</p></div></div></div></header>
+<header class="pitch"><div class="wrap"><div class="kicker">An institutional design for reliable power</div><div><span class="concept-badge">Independent concept</span></div><h1>Global Grid Asset Facility</h1><div class="hero-grid"><p class="hero-lead">A proposed institution that funds power lines against the revenue utilities actually collect.</p><p class="hero-sub">It would own grid assets, carry completion and payment risk, and turn reliable electricity into durable cash flow.</p><div class="proposal"><strong>Working proposal</strong><p>Narrow mandate. Public covenant. Designed to hand assets back.</p></div></div></div></header>
 
 <main class="pitch">
 <section id="problem"><div class="wrap"><div class="section-head"><div class="num"><span></span>01</div><h2><span class="section-label">The broken system</span>Across sub-Saharan Africa, the power system is trapped.</h2></div><p class="lede">From Uganda, Zambia, Tanzania, and Mozambique through the wider <span class="tip" tabindex="0" data-tip="The World Bank and AfDB initiative to connect 300 million people in Africa to electricity by 2030">Mission 300</span> reform pipeline, the pattern repeats in every electrification effort. The problem is not just how to build a power line. It is who can finance it for decades while making the revenue system believable.</p>
+<div class="loop-toggle" role="group" aria-label="Loop view" id="loopToggle"><button class="on" data-mode="off" aria-pressed="true">Without the Facility</button><button data-mode="on" aria-pressed="false">With the Facility</button></div>
 <div class="loop" aria-label="Vicious revenue cycle">
 <button class="loop-step on"><b>Tariffs sit below cost</b><small>Political protection is promised through the utility balance sheet.</small></button><button class="loop-step"><b>Utilities lose cash</b><small>Collections cannot cover operating and capital costs.</small></button><button class="loop-step"><b>Investment stops</b><small>Maintenance and network expansion are deferred.</small></button><button class="loop-step"><b>Service degrades</b><small>Outages make bills harder to defend.</small></button><button class="loop-step"><b>Losses deepen</b><small>Theft and non-payment become rational responses.</small></button>
 </div><div class="break-loop"><strong>The loop needs an external entry point.</strong><span>An outside balance sheet can finance the asset. An enforceable revenue covenant can keep the cash cycle intact. One without the other is not enough.</span></div>
 
-<div style="height:70px"></div><div class="gap-map"><article class="existing"><h3>What exists today</h3><div class="role"><span>Sovereign loans</span><em><span class="tip" tabindex="0" data-tip="International Development Association, the World Bank's concessional lending arm for the poorest countries">IDA</span>, <span class="tip" tabindex="0" data-tip="African Development Bank">AfDB</span></em></div><div class="role"><span>Project preparation</span><em><span class="tip" tabindex="0" data-tip="Global Infrastructure Facility">GIF</span>, <span class="tip" tabindex="0" data-tip="Energy Sector Management Assistance Program">ESMAP</span></em></div><div class="role"><span>Guarantees</span><em><span class="tip" tabindex="0" data-tip="Multilateral Investment Guarantee Agency">MIGA</span></em></div><div class="role"><span>Coordination</span><em><span class="tip" tabindex="0" data-tip="The World Bank and AfDB initiative to connect 300 million people in Africa to electricity by 2030">Mission 300</span></em></div><div class="role"><span>Connection subsidies</span><em><span class="tip" tabindex="0" data-tip="Global Partnership for Results-Based Approaches">GPRBA</span>, <span class="tip" tabindex="0" data-tip="Universal Energy Facility">UEF</span></em></div></article><article class="missing"><h3>The unfilled function</h3><button class="role fn" aria-expanded="false"><span>Own grid assets</span><span class="fn-meta"><em>Missing</em><b class="fn-x" aria-hidden="true">+</b></span></button><div class="fn-detail" hidden><p>Most grids belong to everyone, so nobody is fully accountable for them. A single owner can borrow against the wires, keep them repaired over decades, and hand them back to the host country at a fixed date and price.</p></div><button class="role fn" aria-expanded="false"><span>Carry completion risk</span><span class="fn-meta"><em>Missing</em><b class="fn-x" aria-hidden="true">+</b></span></button><div class="fn-detail" hidden><p>Announced projects and finished projects are not the same thing. When the institution carries completion risk, it pays out of its own pocket when construction runs late or over budget, which makes the original bid a promise the contractors have to keep.</p></div><button class="role fn" aria-expanded="false"><span>Carry payment risk for decades</span><span class="fn-meta"><em>Missing</em><b class="fn-x" aria-hidden="true">+</b></span></button><div class="fn-detail" hidden><p>A power line repays its cost over decades, not months. If nobody absorbs the lean early years of the revenue plan, the money for the wires never arrives. An institution that stays in for the long term lets the loan last as long as the asset.</p></div><button class="role fn" aria-expanded="false"><span>Enforce a local revenue covenant</span><span class="fn-meta"><em>Missing</em><b class="fn-x" aria-hidden="true">+</b></span></button><div class="fn-detail" hidden><p>The ribbon-cutting is the easy part. Most access programs fail quietly after commissioning: scheduled tariff adjustments get delayed, collections enforcement softens, protected funds get redirected. Enforcement means the rules stay in force when it is politically expensive to enforce them.</p></div><p><strong>This is the institution's entire reason to exist.</strong></p></article></div>
+<div style="height:70px"></div><div class="gap-map"><article class="existing"><h3>What exists today</h3><div class="role"><span>Sovereign loans</span><em><span class="tip" tabindex="0" data-tip="International Development Association, the World Bank's concessional lending arm for the poorest countries">IDA</span>, <span class="tip" tabindex="0" data-tip="African Development Bank">AfDB</span></em></div><div class="role"><span>Project preparation</span><em><span class="tip" tabindex="0" data-tip="Global Infrastructure Facility">GIF</span>, <span class="tip" tabindex="0" data-tip="Energy Sector Management Assistance Program">ESMAP</span></em></div><div class="role"><span>Guarantees</span><em><span class="tip" tabindex="0" data-tip="Multilateral Investment Guarantee Agency">MIGA</span></em></div><div class="role"><span>Coordination</span><em><span class="tip" tabindex="0" data-tip="The World Bank and AfDB initiative to connect 300 million people in Africa to electricity by 2030">Mission 300</span></em></div><div class="role"><span>Connection subsidies</span><em><span class="tip" tabindex="0" data-tip="Global Partnership for Results-Based Approaches">GPRBA</span>, <span class="tip" tabindex="0" data-tip="Universal Energy Facility">UEF</span></em></div></article><article class="missing"><h3>The unfilled function</h3><button class="role fn" aria-expanded="false"><span>Own grid assets</span><span class="fn-meta"><em>Missing</em><b class="fn-x" aria-hidden="true">+</b></span></button><div class="fn-detail" hidden><p>Most grids belong to everyone, so nobody is fully accountable for them. A single owner can borrow against the wires, keep them repaired over decades, and hand them back to the host country at a fixed date and price.</p></div><button class="role fn" aria-expanded="false"><span>Carry completion risk</span><span class="fn-meta"><em>Missing</em><b class="fn-x" aria-hidden="true">+</b></span></button><div class="fn-detail" hidden><p>Announced projects and finished projects are not the same thing. When the institution carries completion risk, it pays out of its own pocket when construction runs late or over budget, which makes the original bid a promise the contractors have to keep.</p></div><button class="role fn" aria-expanded="false"><span>Carry payment risk for decades</span><span class="fn-meta"><em>Missing</em><b class="fn-x" aria-hidden="true">+</b></span></button><div class="fn-detail" hidden><p>A power line repays its cost over decades, not months. If nobody absorbs the lean early years of the revenue plan, the money for the wires never arrives. An institution that stays in for the long term lets the loan last as long as the asset.</p></div><button class="role fn" aria-expanded="false"><span>Enforce a local revenue covenant</span><span class="fn-meta"><em>Missing</em><b class="fn-x" aria-hidden="true">+</b></span></button><div class="fn-detail" hidden><p>The ribbon-cutting is the easy part. Most access programs fail quietly after commissioning: scheduled tariff adjustments get delayed, collections enforcement softens, earmarked funds get diverted. That last one has a name: corruption. Enforcement means the revenue sits where no official can reach it, and the rules stay in force when it is politically expensive to enforce them.</p></div><p><strong>This is the institution's entire reason to exist.</strong></p></article></div>
 
 <figure class="strata-fig" aria-labelledby="strataCap">
 <svg viewBox="0 0 1200 640" role="img">
@@ -452,11 +494,38 @@
 </div>
 </div>
 <div class="feas-block">
+<h4>The turnarounds the Facility institutionalizes</h4>
+<p>Losses and collections, before and after, in the as-reported numbers:</p>
+<div class="barfig">
+<h5>Umeme, Uganda: losses</h5>
+<div class="bar-line"><span class="bar-k">Before</span><div class="bar-track"><div class="bar" style="width:38%"></div></div><span class="bar-v">38%</span></div>
+<div class="bar-line"><span class="bar-k">After</span><div class="bar-track"><div class="bar after" style="width:21%"></div></div><span class="bar-v">21%</span></div>
+<h5>Umeme, Uganda: collections</h5>
+<div class="bar-line"><span class="bar-k">Before</span><div class="bar-track"><div class="bar" style="width:80%"></div></div><span class="bar-v">80%</span></div>
+<div class="bar-line"><span class="bar-k">After</span><div class="bar-track"><div class="bar after" style="width:99.1%"></div></div><span class="bar-v">99.1%</span></div>
+<h5>Delhi, India: AT&amp;C losses</h5>
+<div class="bar-line"><span class="bar-k">Before</span><div class="bar-track"><div class="bar" style="width:55%"></div></div><span class="bar-v">above 55%</span></div>
+<div class="bar-line"><span class="bar-k">After</span><div class="bar-track"><div class="bar after" style="width:10%"></div></div><span class="bar-v">under 10%</span></div>
+</div>
+</div>
+<div class="feas-block">
 <h4>What failed</h4>
 <div class="fail"><strong>JIRAMA (Madagascar).</strong> Suppressed tariff ~US$0.13 vs generation cost near US$0.30/kWh.</div>
 <div class="fail"><strong>EDG (Guinea).</strong> US 10c tariff vs US 27c cost, 42% collection, 30% losses; subsidies of US$317-448m/yr (1.2-2.1% of GDP).</div>
 <div class="fail"><strong>SNE (Chad).</strong> 40% losses, ~50% collection; subsidy near US$1,000 per customer per year.</div>
 <div class="fail"><strong>KRECS (Uganda).</strong> 30 kWh/month households at US$0.14/kWh needed ~20x sales to break even despite 100% collection.</div>
+</div>
+<div class="feas-block">
+<h4>The fatal gap, drawn to scale</h4>
+<div class="barfig">
+<h5>Guinea, EDG: tariff against cost</h5>
+<p class="barsub">The as-reported Guinea numbers from the failures above.</p>
+<div class="bar-line"><span class="bar-k">Tariff</span><div class="bar-track"><div class="bar rev" style="width:33.3%"></div></div><span class="bar-v">10c</span></div>
+<div class="bar-line"><span class="bar-k">Cost</span><div class="bar-track"><div class="bar cost" style="width:90%"></div></div><span class="bar-v">27c</span></div>
+<div class="bar-axis"><span></span><div class="ticks"><span>0</span><span>10</span><span>20</span><span>30c per kWh</span></div><span></span></div>
+<p class="fatal-note"><b>Collection rate: 42%.</b> Against those bills, only 42% is ever collected: the 10c tariff realizes about 4.2c per billed kWh.</p>
+<p class="fig-cap">Guinea charges 10c, collects 4.2c, and pays 27c. The Facility funds the wires against <span class="rq">the revenue utilities actually collect</span>, because only that revenue can repay the loan.</p>
+</div>
 </div>
 <div class="feas-block">
 <h4>The go/no-go gates</h4>
@@ -466,6 +535,39 @@
 <li><b>Gate 3, capital structure.</b><p>Capital subsidy per connection sized against the observed US$286-411 range (up to 75-100% of capex where loads are thinnest), disbursement-credible, with renewal capex funded, not just the first investment.</p></li>
 <li><b>Gate 4, risk allocation.</b><p>Operator remuneration insulated from sector cashflow (the CIE model) or a regulated return on capex (the Umeme model); FX, fuel, and government-payment risk explicitly assigned; downside debt-service coverage at or above 1 with equity IRR above the local discount rate.</p></li>
 </ol>
+</div>
+<div class="feas-block">
+<div class="stress" id="stress">
+<div class="panel-kicker">Gate 2, runnable</div>
+<h4 class="stress-h">Would the Facility invest here?</h4>
+<p class="stress-sub">The Gate 2 test, taken straight from the unit-economics identity above: realized tariff times collection must cover the energy cost grossed up for losses. Defaults are Guinea's as-reported EDG figures. Move the sliders and watch it fail or pass.</p>
+<div class="slider-row">
+<div class="sr-head"><label for="stTariff">Tariff</label><output id="stTariffOut" for="stTariff">10c/kWh</output></div>
+<input type="range" id="stTariff" min="0" max="60" step="1" value="10">
+</div>
+<div class="slider-row">
+<div class="sr-head"><label for="stCollect">Collection rate</label><output id="stCollectOut" for="stCollect">42%</output></div>
+<input type="range" id="stCollect" min="0" max="100" step="1" value="42">
+</div>
+<div class="slider-row">
+<div class="sr-head"><label for="stLosses">Aggregate losses</label><output id="stLossesOut" for="stLosses">30%</output></div>
+<input type="range" id="stLosses" min="0" max="95" step="1" value="30">
+</div>
+<div class="slider-row">
+<div class="sr-head"><label for="stCost">Energy cost</label><output id="stCostOut" for="stCost">27c/kWh</output></div>
+<input type="range" id="stCost" min="0" max="60" step="1" value="27">
+</div>
+<div class="verdict no" id="stVerdict" aria-live="polite" aria-atomic="true">
+<p class="verdict-word" id="stWord">NO-GO</p>
+<p class="verdict-reading" id="stReading">Shortfall of 34.4c per kWh delivered.</p>
+<div class="v-bars">
+<div class="bar-line"><span class="bar-k">Collected</span><div class="bar-track"><div class="bar rev" id="stRevBar" style="width:10.9%"></div></div><span class="bar-v" id="stRevVal">4.2c</span></div>
+<div class="bar-line"><span class="bar-k">Cost</span><div class="bar-track"><div class="bar cost" id="stCostBar" style="width:100%"></div></div><span class="bar-v" id="stCostVal">38.6c</span></div>
+</div>
+<p class="verdict-take" id="stTake">What it would take: even at 100% collection, the tariff would have to be 38.6c. At a 10c tariff, collection would have to reach 385.7%: no rate on earth passes. The gap has to close through losses and cost first, which is why the institution attacks losses and collection before tariffs.</p>
+</div>
+<p class="stress-foot" id="stFn">Illustrative only. Figures as reported in their sources. The Facility signs nothing without verified baselines: no baseline, no build.</p>
+</div>
 </div>
 <div class="feas-block">
 <h4>Believe now vs measure in-field</h4>
@@ -561,7 +663,7 @@
 <div class="m-hero">
 <div class="m-kicker">A working manifesto</div>
 <h2 class="m-h1">The wires come first.</h2>
-<p class="m-standfirst">We keep acting like reliable electricity is a supply problem. It is a plumbing-and-paperwork problem. AI runs on power. Countries that fix their grids first will have it.</p>
+<p class="m-standfirst">We keep acting like reliable electricity is a supply problem. It is a plumbing-and-paperwork problem. Anyone can use AI; almost nobody can host it. Training a frontier model needs power that never flickers, and the countries sitting on stranded generation cannot sell a megawatt without wires. The data centers will go where the grid can be trusted.</p>
 </div>
 
 <div class="m-sec">
@@ -594,7 +696,7 @@
 <h2>What we should do instead</h2>
 <p>Stop adding institutions that do everything except the one thing. The Global Infrastructure Facility prepares projects beautifully: 172 projects across 68 countries in ten years, each dollar of preparation support claiming to mobilize more than a hundred at financial close. And then those projects stop at financial close, which is exactly where the grid gap begins: construction risk first, then thirty years of collection risk.</p>
 <p>MIGA guarantees generation projects, not the wires. SEforALL's Universal Energy Facility shows 13,982 verified connections: a pilot count, not a system answer. The Green Climate Fund runs consensus boards and a climate mandate that constrains pure transmission and distribution funding. The landscape is crowded with institutions that almost answer the question.</p>
-<p>One seat is deliberately left empty. Nobody owns the grid assets. Nobody carries completion risk and payment risk for decades. Nobody enforces the revenue covenant. So build the institution for the empty seat.</p>
+<p>One seat is deliberately left empty. Whether the utility is state-owned or a private concession, ownership without risk is just a title. Nobody carries completion risk and payment risk for decades out of their own pocket. Nobody enforces the revenue covenant when it gets politically expensive. So build the institution for the empty seat: the owner who loses money if the wires fail.</p>
 <ol class="m-list">
 <li><div class="m-li-k">Job one</div><h4>Own the wires.</h4><p>Asset companies per country and asset class, formed by statute, contract published before concrete is poured. The host government holds a call option at depreciated book value and a mandatory transfer date. A bridge, not a sale.</p></li>
 <li><div class="m-li-k">Job two</div><h4>Carry the risk.</h4><p>Completion risk and decades of payment risk on the institution's own balance sheet, borrowing at AAA rates against donor equity and asset cash flows. Every dollar of equity built toward roughly three dollars of spending authority, the IDA precedent.</p></li>
@@ -602,7 +704,7 @@
 </ol>
 <blockquote class="m-rule">Who finances the wires, who guarantees payment, who enforces the deal after the ribbon cutting. The institution is those three answers.</blockquote>
 <p>The precedents exist. Britain's 1926 Electricity (Supply) Act delivered a national grid in seven years, completed September 1933 on time and on budget, without touching local ownership. The France-Spain interconnector got built through a 50:50 joint venture with EU grant and EIB loan money. Delhi cut losses from above 55 percent to under 10 percent. And every country that crossed the 4,000 kWh-per-person line did it with decades of state-backed or state-guaranteed capital and a statutory revenue institution. Not one made it on market forces alone.</p>
-<p>Governance can be borrowed from the institutions that survived contact with reality: the Global Fund's equal donor and implementer seats, independent integrity from day one, and voting instead of consensus. Canada wrote the playbook for speed outside consensus machinery with the Ottawa Process. Charter the Facility in Toronto, give it the Global Fund's bones, and let the partner countries hold real power.</p>
+<p>Governance can be borrowed, not invented: the Global Fund's equal donor and implementer seats, independent integrity from day one, and voting instead of consensus. Canada wrote the playbook for speed outside consensus machinery with the Ottawa Process. Charter the Facility in Toronto, give it the Global Fund's bones, and let the partner countries hold real power.</p>
 </div>
 
 <div class="m-sec">
@@ -625,7 +727,7 @@
 
 <div class="m-close">
 <div class="m-label">01 institution · 01 job</div>
-<p class="m-one">Buy the wires the countries cannot buy themselves, and make the revenue hold until they can.</p>
+<p class="m-one">Buy the wires the countries cannot buy themselves, and lock the revenue in escrow until the wires pay for themselves.</p>
 </div>
 
 <div class="m-foot">
@@ -899,6 +1001,88 @@ document.querySelectorAll(".layer-pill").forEach(function(p){
     });
   },{rootMargin:"500px 0px"});
   io.observe(el);
+})();
+
+/* Loop inverter: "Without / With the Facility" flips the five steps to their virtuous mirror */
+(function(){
+  var toggle=document.getElementById("loopToggle"); if(!toggle) return;
+  var steps=Array.prototype.slice.call(document.querySelectorAll(".loop-step"));
+  var loop=document.querySelector(".loop");
+  var OFF=[
+    ["Tariffs sit below cost","Political protection is promised through the utility balance sheet."],
+    ["Utilities lose cash","Collections cannot cover operating and capital costs."],
+    ["Investment stops","Maintenance and network expansion are deferred."],
+    ["Service degrades","Outages make bills harder to defend."],
+    ["Losses deepen","Theft and non-payment become rational responses."]
+  ];
+  var ON=[
+    ["Covenant holds tariffs to cost","Formula adjustments land as written, on schedule."],
+    ["Utility collects","Revenue is collected before pressure can redirect it."],
+    ["Investment flows","Maintenance and expansion are bankable again."],
+    ["Service improves","Reliable power makes bills defensible."],
+    ["Losses fall","Metering and enforcement make theft cost more than paying."]
+  ];
+  function render(mode){
+    var set = mode==="on" ? ON : OFF;
+    steps.forEach(function(st,i){
+      st.querySelector("b").textContent=set[i][0];
+      st.querySelector("small").textContent=set[i][1];
+    });
+    loop.setAttribute("aria-label", mode==="on" ? "Virtuous revenue cycle, with the Facility" : "Vicious revenue cycle");
+    toggle.querySelectorAll("button").forEach(function(x){
+      var m = x.getAttribute("data-mode")===mode;
+      x.classList.toggle("on", m);
+      x.setAttribute("aria-pressed", m ? "true" : "false");
+    });
+  }
+  toggle.querySelectorAll("button").forEach(function(x){
+    x.addEventListener("click", function(){ render(x.getAttribute("data-mode")); });
+  });
+})();
+/* Covenant stress test: "Would the Facility invest here?" runs Gate 2 on slider inputs */
+(function(){
+  var t=document.getElementById("stTariff"); if(!t) return;
+  var c=document.getElementById("stCollect"), l=document.getElementById("stLosses"), k=document.getElementById("stCost");
+  var tO=document.getElementById("stTariffOut"), cO=document.getElementById("stCollectOut"),
+      lO=document.getElementById("stLossesOut"), kO=document.getElementById("stCostOut"),
+      vbox=document.getElementById("stVerdict"), word=document.getElementById("stWord"),
+      reading=document.getElementById("stReading"), take=document.getElementById("stTake"),
+      revBar=document.getElementById("stRevBar"), costBar=document.getElementById("stCostBar"),
+      revVal=document.getElementById("stRevVal"), costVal=document.getElementById("stCostVal");
+  function f1(v){ return v.toFixed(1); }
+  function render(){
+    var tv=parseFloat(t.value), cv=parseFloat(c.value), lv=parseFloat(l.value), kv=parseFloat(k.value);
+    tO.textContent=tv+"c/kWh"; cO.textContent=cv+"%"; lO.textContent=lv+"%"; kO.textContent=kv+"c/kWh";
+    var rev=tv*cv/100, cDel=kv/(1-lv/100);
+    var pass = rev>=cDel;
+    var max=Math.max(rev,cDel); if(max<=0) max=1;
+    revBar.style.width=(100*rev/max).toFixed(1)+"%";
+    costBar.style.width=(100*cDel/max).toFixed(1)+"%";
+    revVal.textContent=f1(rev)+"c"; costVal.textContent=f1(cDel)+"c";
+    vbox.classList.toggle("no", !pass);
+    if(pass){
+      word.textContent="PASS";
+      reading.textContent="Passes with a margin of "+f1(rev-cDel)+"c per kWh delivered.";
+      take.textContent="These numbers pass Gate 2 now: "+f1(rev)+"c collected against "+f1(cDel)+
+        "c of cost per kWh delivered. On a real deal this test would run against verified, audited baselines, not against figures anyone claims.";
+    } else {
+      word.textContent="NO-GO";
+      reading.textContent="Shortfall of "+f1(cDel-rev)+"c per kWh delivered.";
+      var tNeed=cDel, cNeed=tv>0?100*cDel/tv:Infinity;
+      if(cNeed<=100){
+        take.textContent="What it would take: getting collection to "+f1(cNeed)+"% on the "+tv+
+          "c tariff passes, with no tariff hike. The covenant locks that collection rate before the first bond is issued.";
+      } else if(tv<=0){
+        take.textContent="What it would take: a tariff has to exist before anything else counts. At 0c, no collection rate and no loss reduction pass the test.";
+      } else {
+        take.textContent="What it would take: even at 100% collection, the tariff would have to be "+f1(tNeed)+
+          "c. At a "+tv+"c tariff, collection would have to reach "+f1(cNeed)+"%: no rate on earth passes. "+
+          "The gap has to close through losses and cost first, which is why the institution attacks losses and collection before tariffs.";
+      }
+    }
+  }
+  [t,c,l,k].forEach(function(inp){ inp.addEventListener("input", render); });
+  render();
 })();
 
 /* init */
